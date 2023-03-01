@@ -7,3 +7,24 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+#first-selector {
+    border: solid 2px red;
+
+}
+#roast-selection {
+    width: 100%;
+
+}
+#first-typing {
+    width: 100%;
+}
+#submit {
+    margin-top: 1em;
+}
+#second-typing {
+    width:100%;
+}
+#submitTwo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
