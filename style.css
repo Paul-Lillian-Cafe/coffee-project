@@ -9,8 +9,10 @@ td, th {
 }
 body{
     background-color: #151C47;
+
 }
 *{
+    font-family: 'Noto Serif', serif;
     background-color: #151C47;
     color: white;
 }
