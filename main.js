@@ -31,19 +31,13 @@ nextSearch.addEventListener('keyup', function(){
    tbody.innerHTML = renderCoffees(filteredCoffees);
 });
 
-
-
-
-
-
-
+//added col-6 for left side 
 function renderCoffee(coffee) {
-    var html = '<div class="coffee">';
+    var html = '<div class="coffee col-6 layout">';
     // html += '<td>' + coffee.id + '</td>';
     html += '<h3>' + coffee.name + '</h3>';
     html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
-
     return html;
 }
 

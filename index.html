@@ -16,7 +16,6 @@
     <div class="container text-center">
     <img src="img/Whole%20Latte%20Love-logos_transparent.png" id="logo">
         <h1>Coffee!</h1>
-
     </div>
 </nav>
 
@@ -30,14 +29,14 @@
 <!--  ------------roasts left side----------------------------------------->
             <div class="col col-lg-6">
                     <table>
-                        <thead>
-                            <tr class="invisible">
-                                <th>ID</th>
-                                <th>NAME</th>
-                                <th>ROAST</th>
-                            </tr>
-                        </thead>
-                        <tbody id="coffees"></tbody>
+<!--                        <thead>-->
+<!--                            <tr>-->
+<!--                                <th>ID</th>-->
+<!--                                <th>NAME</th>-->
+<!--                                <th>ROAST</th>-->
+<!--                            </tr>-->
+<!--                        </thead>-->
+                        <div id="coffees" class="border border-warning row"></div>
                     </table>
             </div>
 <!--  ------------ roasts   ------------------------------------------->
@@ -57,8 +56,9 @@
                     <label style="margin-top: 1em; margin-bottom: .5em;" for="searchCoffee">Coffee Name</label>
                     <br>
                     <input style="background-color: white; color: black;" id="searchCoffee" type="text">
-                    <input class="btn btn-primary" id="submit" type="submit" />
+                    <input class="btn btn-primary w-100" id="submit" type="submit" />
                 </form>
+                <hr>
 <!--                second coffee----------------------------------------->
                 <form>
                     <h3 class="text-center">Add a Coffee</h3>
@@ -72,8 +72,8 @@
                     <br>
                     <label style="margin-top: 1em; margin-bottom: 1em;" for="second-typing">Coffee Name</label>
                     <br>
-                    <input id="second-typing" type="text">
-                    <input class="btn btn-primary" id="submitTwo" type="submit" />
+                    <input style="background-color: white" id="second-typing" type="text">
+                    <input class="btn btn-primary w-100" id="submitTwo" type="submit" />
                 </form>
             </div>
         </div>

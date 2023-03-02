@@ -1,6 +1,7 @@
 table {
     border-collapse: collapse;
     margin: 15px 0;
+    display: block;
 }
 
 td, th {
@@ -46,11 +47,23 @@ body{
     height: auto;
     object-fit: scale-down;
 }
+
 td{
     font-size: 15px;
 }
-#coffees {
+
+.layout {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
+
+/*h3 {*/
+/*    float: left;*/
+/*}*/
+/*p {*/
+/*    display: inline;*/
+/*}*/
+
+
+
 
