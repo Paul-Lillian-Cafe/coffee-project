@@ -7,9 +7,19 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+body{
+    background-color: #151C47;
+}
+*{
+    background-color: #151C47;
+    color: white;
+}
 #first-selector {
     border: solid 2px red;
 
+}
+#navbar{
+    border: pink 1px solid;
 }
 #roast-selection {
     width: 100%;
@@ -27,4 +37,17 @@ td, th {
 #submitTwo {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+#logo {
+    border: solid 1px red;
+    width: 200px;
+    height: auto;
+    object-fit: scale-down;
+}
+td{
+    font-size: 15px;
+}
+#coffees {
+    display: flex;
+    flex-direction: column;
 }
