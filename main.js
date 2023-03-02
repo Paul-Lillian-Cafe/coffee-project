@@ -15,6 +15,22 @@ search.addEventListener('keyup', function() {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 });
 
+
+let nextSearch = document.getElementById("second-typing");
+
+nextSearch.addEventListener('keyup', function(){
+   console.log("did this one work?");
+   let getValue = nextSearch.value.toUpperCase();
+   let filteredCoffees =[];
+   for(let i = 0; i < coffees.length; i++){
+       if(coffees[i].name.toUpperCase().includes(getValue)){
+           filteredCoffees.push(coffees[i]);
+       }
+       console.log(coffees[i]);
+   }
+   tbody.innerHTML = renderCoffees(filteredCoffees);
+});
+
 function renderCoffee(coffee) {
     var html = '<tr class="coffee">';
     html += '<td>' + coffee.id + '</td>';
