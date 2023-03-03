@@ -62,16 +62,25 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
-function secondDropdown(e) {
-    e.preventDefault();
-    let selectedRoast = roastSelectionTwo.value;
-    let filteredCoffees = [];
-    coffees.forEach(function(coffee){
-        if (coffee.roast === selectedRoast){
-            filteredCoffees.push(coffee);
-        }
-    });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
+// function secondDropdown(e) {
+//     e.preventDefault();
+//     let selectedRoast = roastSelectionTwo.value;
+//     let filteredCoffees = [];
+//     coffees.forEach(function(coffee){
+//         if (coffee.roast === selectedRoast){
+//             filteredCoffees.push(coffee);
+//         }
+//     });
+//     tbody.innerHTML = renderCoffees(filteredCoffees);
+// }
+
+function addCoffee(e){
+    e.preventDefault()
+    let coffeeId= coffees.length +1;
+    let coffeeName = document.getElementById('second-typing').value;
+    let coffeeRoast = document.getElementById('roast-selection-two').value;
+    let newCoffee = {coffeeId, name: coffeeName, roast: coffeeRoast};
+    coffees.push(newCoffee);
 }
 
 
