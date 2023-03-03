@@ -22,22 +22,13 @@
 <main>
 
 
-    <div id="first-selector" class="container">
+    <div id="first-selector" class="container-fluid">
         <div class="row">
 
 
 <!--  ------------roasts left side----------------------------------------->
             <div class="col col-lg-6">
-                    <table>
-<!--                        <thead>-->
-<!--                            <tr>-->
-<!--                                <th>ID</th>-->
-<!--                                <th>NAME</th>-->
-<!--                                <th>ROAST</th>-->
-<!--                            </tr>-->
-<!--                        </thead>-->
-                        <div id="coffees" class="border border-warning row"></div>
-                    </table>
+                <div id="coffees" class="border border-warning row" style="height: 100%"></div>
             </div>
 <!--  ------------ roasts   ------------------------------------------->
 
@@ -47,6 +38,7 @@
                 <form>
                     <label class="fw-bold" style="margin-top: 1em; margin-bottom: .5em;" for="roast-selection">Roast</label>
                     <select class="form-select form-select-md mb-3" id="roast-selection">
+                        <option>all</option>
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>

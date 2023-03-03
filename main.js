@@ -35,8 +35,8 @@ nextSearch.addEventListener('keyup', function(){
 function renderCoffee(coffee) {
     var html = '<div class="coffee col-6 layout">';
     // html += '<td>' + coffee.id + '</td>';
-    html += '<h3>' + coffee.name + '</h3>';
-    html += '<p>' + coffee.roast + '</p>';
+    html += '<h3 class="p-3">' + coffee.name + '</h3>';
+    html += '<p class="pt-4">' + coffee.roast + '</p>';
     html += '</div>';
     return html;
 }
