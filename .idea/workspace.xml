@@ -64,7 +64,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>87</line>
+          <line>99</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

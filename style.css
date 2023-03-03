@@ -107,7 +107,7 @@ header p {
     width: auto;
 }
 #main {
-    border: solid 3px red;
+    /*border: solid 3px red;*/
     margin-top: 1em;
     background-color: #FFFDD0;
 }
@@ -150,9 +150,22 @@ td{
     justify-content: left;
 }
 
-p {
-    padding-top: 8px;
 
+div .coffee {
+    /*display: flex;*/
+    margin: 1em 5px 5px;
+}
+
+div .coffee-layout {
+    margin-right: 2em;
+}
+
+h4 .coffee{
+    background-color: lightblue;
+}
+
+p {
+    background-color: white;
 }
 
 

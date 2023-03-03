@@ -33,10 +33,10 @@ nextSearch.addEventListener('keyup', function(){
 
 //added col-6 for left side 
 function renderCoffee(coffee) {
-    var html = '<div class="coffee col-6 layout">';
+    var html = '<div class="coffee col-6 col-sm-3 col-lg-3 card text-center text-dark">';
     // html += '<td>' + coffee.id + '</td>';
-    html += '<h3 class="p-3">' + coffee.name + '</h3>';
-    html += '<p class="pt-4">' + coffee.roast + '</p>';
+    html += '<h3 class="card-header w-70 text-nowrap">' + coffee.name + '</h3>';
+    html += '<p class="p-1 card-body">' + coffee.roast + '</p>';
     html += '</div>';
     return html;
 }
