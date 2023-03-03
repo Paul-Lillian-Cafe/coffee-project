@@ -15,12 +15,13 @@ body{
 *{
     font-family: 'Noto Serif', serif;
     background-color: #151C47;
-    color: white;
+    color: #FFFDD0;
 }
 #seperator{
     display: flex;
     justify-content: center;
     margin: 2em;
+    color: #FFFDD0
 }
 #first-selector {
     /*border: solid 2px red;*/
@@ -106,8 +107,12 @@ header p {
     width: auto;
 }
 #main {
+    border: solid 3px red;
     margin-top: 1em;
-    background-color: #151C47;
+    background-color: #FFFDD0;
+}
+#right-side{
+
 }
 #roast-selection {
     width: 100%;

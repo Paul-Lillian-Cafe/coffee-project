@@ -79,8 +79,11 @@ function addCoffee(e){
     let coffeeId= coffees.length +1;
     let coffeeName = document.getElementById('second-typing').value;
     let coffeeRoast = document.getElementById('roast-selection-two').value;
-    let newCoffee = {coffeeId, name: coffeeName, roast: coffeeRoast};
+    let newCoffee = {id: coffeeId, name: coffeeName, roast: coffeeRoast};
     coffees.push(newCoffee);
+
+    tbody.innerHTML = renderCoffees(coffees);
+
 }
 
 
@@ -117,4 +120,4 @@ tbody.innerHTML = renderCoffees(coffees);
 
 
 submitButton.addEventListener('click', updateCoffees);
-submitButtonTwo.addEventListener('click', secondDropdown);
+submitButtonTwo.addEventListener('click', addCoffee);
