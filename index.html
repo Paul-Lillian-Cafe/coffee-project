@@ -12,10 +12,13 @@
 
 </head>
 <body>
+
 <nav class="navbar navbar-expand-md navbar-dark sticky-top" id="navbar">
     <div id="innerNav" class="container text-center">
         <img src="img/resized-logo.jpg" id="logo">
 <!--            <h1>Coffee!</h1>-->
+
+
 
     </div>
 </nav>
@@ -39,22 +42,13 @@
 <main>
 
 
-    <div id="first-selector" class="container">
+    <div id="first-selector" class="container-fluid">
         <div class="row">
 
 
 <!--  ------------roasts left side----------------------------------------->
             <div class="col col-lg-6">
-                    <table>
-                        <thead>
-                            <tr class="invisible">
-                                <th>ID</th>
-                                <th>NAME</th>
-                                <th>ROAST</th>
-                            </tr>
-                        </thead>
-                        <tbody id="coffees"></tbody>
-                    </table>
+                <div id="coffees" class="border border-warning row" style="height: 100%"></div>
             </div>
 <!--  ------------ roasts   ------------------------------------------->
 
@@ -64,6 +58,7 @@
                 <form>
                     <label class="fw-bold" style="margin-top: 1em; margin-bottom: .5em;" for="roast-selection">Roast</label>
                     <select class="form-select form-select-md mb-3" id="roast-selection">
+                        <option>all</option>
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
@@ -73,8 +68,9 @@
                     <label style="margin-top: 1em; margin-bottom: .5em;" for="searchCoffee">Coffee Name</label>
                     <br>
                     <input style="background-color: white; color: black;" id="searchCoffee" type="text">
-                    <input class="btn btn-primary" id="submit" type="submit" />
+                    <input class="btn btn-primary w-100" id="submit" type="submit" />
                 </form>
+                <hr>
 <!--                second coffee----------------------------------------->
                 <form>
                     <h3 class="text-center">Add a Coffee</h3>
@@ -88,8 +84,8 @@
                     <br>
                     <label style="margin-top: 1em; margin-bottom: 1em;" for="second-typing">Coffee Name</label>
                     <br>
-                    <input id="second-typing" type="text">
-                    <input class="btn btn-primary" id="submitTwo" type="submit" />
+                    <input style="background-color: white" id="second-typing" type="text">
+                    <input class="btn btn-primary w-100" id="submitTwo" type="submit" />
                 </form>
             </div>
         </div>
