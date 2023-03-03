@@ -18,7 +18,7 @@ body{
     color: white;
 }
 #first-selector {
-    border: solid 2px red;
+    /*border: solid 2px red;*/
 
 }
 #navbar{
@@ -100,7 +100,10 @@ header p {
     height: 450px;
     width: auto;
 }
-
+#main {
+    margin-top: 1em;
+    background-color: #151C47;
+}
 #roast-selection {
     width: 100%;
 
@@ -120,8 +123,8 @@ header p {
 }
 
 #logo {
-    border: solid 1px red;
-    width: 200px;
+    /*border: solid 1px red;*/
+    width: 100px;
     height: auto;
     object-fit: scale-down;
 }
