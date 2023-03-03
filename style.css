@@ -91,11 +91,11 @@ header .overlay {
     z-index: 1;
 }
 header p {
-    border: solid green 1px;
+    /*border: solid green 1px;*/
 }
 #videoLogo{
     position: relative;
-    border: solid green 2px;
+    /*border: solid green 2px;*/
     height: 450px;
     width: auto;
 }
