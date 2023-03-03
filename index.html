@@ -6,46 +6,59 @@
     <title>Whole Latte Love</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
 
 </head>
 <body>
 
+<nav class="navbar navbar-expand-md navbar-dark sticky-top" id="navbar">
+    <div id="innerNav" class="container text-center">
+        <img src="img/resized-logo.jpg" id="logo">
+        <!--            <h1>Coffee!</h1>-->
 
-<main>
-    <!--   ----------------------------------------- header-------------------------------------------->
-    <div class="container text-center">
 
-        <h1>Coffee!</h1>
 
     </div>
-    <!--  -- ----------------------------------------- header-------------------------------------------->
+</nav>
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="img/Morning_Espresso_Routine_(abridged_version).webm" type="video/webm">
+    </video>
+    <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+            <div class="w-100 text-white">
+                <img src="img/Whole%20Latte%20Love-logos_transparent.png" id="videoLogo">
+
+                <p class="lead mb-0">We ain't fooling</p>
+            </div>
+        </div>
+    </div>
+
+</header>
+
+<main>
 
 
-    <div id="first-selector" class="container">
+    <div id="first-selector" class="container-fluid">
         <div class="row">
 
 
             <!--  ------------roasts left side----------------------------------------->
             <div class="col col-lg-6">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>NAME</th>
-                        <th>ROAST</th>
-                    </tr>
-                    </thead>
-                    <tbody id="coffees"></tbody>
-                </table>
+                <div id="coffees" class="border border-warning row" style="height: 100%"></div>
             </div>
             <!--  ------------ roasts   ------------------------------------------->
 
 
             <!--  ------------ coffee selection right side --------------------------->
-            <div class="col col-lg-4">
+            <div class="col col-lg-6">
                 <form>
-                    <label style="margin-top: 1em; margin-bottom: .5em;" for="roast-selection">Roast</label>
+                    <label class="fw-bold" style="margin-top: 1em; margin-bottom: .5em;" for="roast-selection">Roast</label>
                     <select class="form-select form-select-md mb-3" id="roast-selection">
+                        <option>all</option>
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
@@ -54,9 +67,10 @@
                     <br>
                     <label style="margin-top: 1em; margin-bottom: .5em;" for="searchCoffee">Coffee Name</label>
                     <br>
-                    <input id="searchCoffee" type="text">
-                    <input class="btn btn-primary" id="submit" type="submit" />
+                    <input style="background-color: white; color: black;" id="searchCoffee" type="text">
+                    <input class="btn btn-primary w-100" id="submit" type="submit" />
                 </form>
+                <hr>
                 <!--                second coffee----------------------------------------->
                 <form>
                     <h3 class="text-center">Add a Coffee</h3>
@@ -70,8 +84,8 @@
                     <br>
                     <label style="margin-top: 1em; margin-bottom: 1em;" for="second-typing">Coffee Name</label>
                     <br>
-                    <input id="second-typing" type="text">
-                    <input class="btn btn-primary" id="submitTwo" type="submit" />
+                    <input style="background-color: white" id="second-typing" type="text">
+                    <input class="btn btn-primary w-100" id="submitTwo" type="submit" />
                 </form>
             </div>
         </div>

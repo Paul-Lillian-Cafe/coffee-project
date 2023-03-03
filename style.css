@@ -1,10 +1,147 @@
 table {
     border-collapse: collapse;
     margin: 15px 0;
+    display: block;
 }
 
 td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+body{
+    background-color: #151C47;
+
+}
+*{
+    font-family: 'Noto Serif', serif;
+    background-color: #151C47;
+    color: white;
+}
+#first-selector {
+    border: solid 2px red;
+
+}
+#navbar{
+    /*border: pink 1px solid;*/
+
+    height: 65px;
+
+}
+#innerNav{
+    /*border: solid green 1px;*/
+    height: 130%;
+    width: auto;
+
+}
+#logo {
+    /*border: solid 1px red;*/
+    width: auto;
+    height: 90%;
+
+}
+/*.jumbotron {*/
+/*    !*background-image: url("img/");*!*/
+/*    !*background-size: cover;*!*/
+/*    !*background-repeat: no-repeat;*!*/
+/*    height: 350px;*/
+/*    width: auto;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    margin: auto;*/
+
+/*}*/
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.0;
+    z-index: 1;
+}
+header p {
+    /*border: solid green 1px;*/
+}
+#videoLogo{
+    position: relative;
+    /*border: solid green 2px;*/
+    height: 450px;
+    width: auto;
+}
+
+#roast-selection {
+    width: 100%;
+
+}
+#searchCoffee {
+    width: 100%;
+}
+#submit {
+    margin-top: 1em;
+}
+#second-typing {
+    width:100%;
+}
+#submitTwo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#logo {
+    border: solid 1px red;
+    width: 200px;
+    height: auto;
+    object-fit: scale-down;
+}
+
+
+td{
+    font-size: 15px;
+}
+
+.layout {
+    display: flex;
+    justify-content: left;
+}
+
+p {
+    padding-top: 8px;
+
+}
+
+
+
+
 
