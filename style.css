@@ -14,7 +14,7 @@ body{
 }
 *{
     font-family: 'Noto Serif', serif;
-    background-color: #151C47;
+    /*background-color: #151C47;*/
     color: #FFFDD0;
 }
 #seperator{
@@ -107,7 +107,7 @@ header p {
     width: auto;
 }
 #main {
-    border: solid 3px red;
+    /*border: solid 3px red;*/
     margin-top: 1em;
     background-color: #FFFDD0;
 }
@@ -154,7 +154,12 @@ p {
     padding-top: 8px;
 
 }
-
+#cards{
+    background-image: url("img/Coffee-Bean-Hardness-1.jpg");
+    background-size: cover;
+    object-position: top;
+    border: solid white 1px;
+}
 
 
 
