@@ -33,12 +33,10 @@ nextSearch.addEventListener('keyup', function(){
 
 //added col-6 for left side 
 function renderCoffee(coffee) {
-    var html = '<div id="cards" class="card coffee col-6 layout">';
+    var html = '<div class="coffee col-6 col-sm-3 col-lg-3 card text-center text-dark">';
     // html += '<td>' + coffee.id + '</td>';
-    html += '<div class="card-body">'
-    html += '<h3 class="card-text p-3">' + coffee.name + '</h3>';
-    html += '<p class="card-text pt-4">' + coffee.roast + '</p>';
-    html += '</div>'
+    html += '<h3 class="card-header w-70 text-nowrap">' + coffee.name + '</h3>';
+    html += '<p class="p-1 card-body">' + coffee.roast + '</p>';
     html += '</div>';
     return html;
 }
@@ -92,20 +90,20 @@ function addCoffee(e){
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
-    {id: 1, name: 'Light City', roast: 'light', desc: 'Light city/New England roast coffees taste bright, delicate, fruity, and floral. The hay-like flavor evident in cinnamon roasts has been cooked away, leaving behind the truest flavor notes of the coffee cherry itself.'},
-    {id: 2, name: 'Half City', roast: 'light', desc: 'For a fruity and flowery brew without the sour acidity of under-roasted beans, give the half city roast a try.'},
-    {id: 3, name: 'Cinnamon', roast: 'light', desc: 'For a fruity and flowery brew without the sour acidity of under-roasted beans, give the half city roast a try.'},
-    {id: 4, name: 'City', roast: 'medium', desc: 'Your coffee beans are in prime territory, about halfway between the first and second cracks; the caramelized flavor profile'},
-    {id: 5, name: 'American', roast: 'medium', desc: 'At this roasting level, coffee beans have just begun to develop their rich chocolatey brown color, transitioning out of the pale cinnamon shade.'},
-    {id: 6, name: 'Breakfast', roast: 'medium', desc: 'a blend of coffee beans (meaning coffee sourced from multiple farms, regions, or countries) is often used for breakfast, the flavor profile is likely to vary greatly by the brand of beans you purchase.' },
-    {id: 7, name: 'High', roast: 'dark', desc: 'This roast is still not the darkest on the scale, though, so it could be a comfortable daily drinker for some coffee fans.'},
-    {id: 8, name: 'Continental', roast: 'dark', desc: 'Continental roasts are usually the first in line in the scale of medium to dark roasts; a smoky, caramel-like body is distinct in the flavor, but we are not yet experiencing the burnt heaviness of the darkest roasts.'},
-    {id: 9, name: 'New Orleans', roast: 'dark', desc: 'A New Orleans roast embodies the flavor of dark coffee without all the elements that we could do without; no burnt or bitter taste, or greasy, heavy mouthfeel.'},
-    {id: 10, name: 'European', roast: 'dark', desc: 'The European style of roasting is meant to create a smooth, low-acidity coffee that pairs well with charcuterie, crudité, and patisserie.'},
-    {id: 11, name: 'Espresso', roast: 'dark', desc:'These coffee beans are roasted the longest of all bean roasts until they are the color of dark chocolate or even black. '},
-    {id: 12, name: 'Viennese', roast: 'dark', desc: ' It is a full-bodied, low-acidity roast with a heavy mouthfeel and undercurrents of dark chocolate.'},
-    {id: 13, name: 'Italian', roast: 'dark', desc: 'The coffee is bitter with a dash of sweetness at best, taking on a strong smoky flavor and low acidity. You might enjoy the occasional cup of Italian roast in the afternoon or as the base for an espresso drink,'},
-    {id: 14, name: 'French', roast: 'dark', desc: 'French roasts, beloved by dark coffee drinkers, are popularly used in a French press or even for drip coffee. It pairs well with heavy cream, which balances out the intensity of the roast, and we find it to be a good strong coffee for affogato drinks. '},
+    {id: 1, name: 'Light City', roast: 'light'},
+    {id: 2, name: 'Half City', roast: 'light'},
+    {id: 3, name: 'Cinnamon', roast: 'light'},
+    {id: 4, name: 'City', roast: 'medium'},
+    {id: 5, name: 'American', roast: 'medium'},
+    {id: 6, name: 'Breakfast', roast: 'medium'},
+    {id: 7, name: 'High', roast: 'dark'},
+    {id: 8, name: 'Continental', roast: 'dark'},
+    {id: 9, name: 'New Orleans', roast: 'dark'},
+    {id: 10, name: 'European', roast: 'dark'},
+    {id: 11, name: 'Espresso', roast: 'dark'},
+    {id: 12, name: 'Viennese', roast: 'dark'},
+    {id: 13, name: 'Italian', roast: 'dark'},
+    {id: 14, name: 'French', roast: 'dark'},
 ];
 
 var tbody = document.querySelector('#coffees');
