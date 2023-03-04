@@ -24,9 +24,9 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#"><i class="fa-solid fa-mug-hot"></i> Home <span class="sr-only"></span></a>
-                <a class="nav-item nav-link" href="#coffees"><i class="fa-solid fa-mug-hot"></i> Our Menu</a>
-                <a class="nav-item nav-link" href="https://www.google.com/maps/@30.2892027,-97.7157871,12.86z"><i class="fa-solid fa-mug-hot"></i> Locations</a>
-                <a class="nav-item nav-link" href="https://www.tastingtable.com/956172/types-of-coffee-roasts-explained/"><i class="fa-solid fa-mug-hot"></i> About our Coffees</a>
+                <a class="nav-item nav-link active" href="#coffees"><i class="fa-solid fa-mug-hot"></i> Our Menu</a>
+                <a class="nav-item nav-link active" href="https://www.google.com/maps/@30.2892027,-97.7157871,12.86z"><i class="fa-solid fa-mug-hot"></i> Locations</a>
+                <a class="nav-item nav-link active" href="https://www.tastingtable.com/956172/types-of-coffee-roasts-explained/"><i class="fa-solid fa-mug-hot"></i> About our Coffees</a>
             </div>
         </div>
 
@@ -34,7 +34,7 @@
     </div>
 </nav>
 <header>
-    <div class="overlay"></div>
+    <div class="overlay" id="home"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="img/Morning_Espresso_Routine_(abridged_version).webm" type="video/webm">
         </video>
@@ -42,15 +42,16 @@
         <div class="d-flex h-100 text-center align-items-center">
             <div class="w-100 text-white">
                 <img src="img/Whole%20Latte%20Love-logos_transparent.png" id="videoLogo">
+                <br>WE AIN'T FOOLING
 
-                <p class="lead mb-0">We ain't fooling</p>
+
             </div>
         </div>
     </div>
 
 </header>
 
-<h3 id="seperator">--------------------- <i class="fa-solid fa-mug-hot"></i>  Our Menu ---------------------</h3>
+<h3 id="seperator">---------------------   <i class="fa-solid fa-mug-hot"></i>  Our Menu ---------------------</h3>
 
 <main id="main">
 
@@ -79,12 +80,14 @@
                     <label style="margin-top: 1em; margin-bottom: .5em;" for="searchCoffee">Coffee Name</label>
                     <br>
                     <input style="background-color: white; color: black;" id="searchCoffee" type="text">
-                    <input class="btn btn-primary w-100" id="submit" type="submit" />
+                    <br>
+                    <input class="btn btn-primary" id="submit" type="submit" />
                 </form>
                 <hr>
 <!--                second coffee----------------------------------------->
                 <form>
                     <h3 class="text-center">Add a Coffee</h3>
+
                     <label style="margin-top: 1em; margin-bottom: .5em;" for="roast-selection">Roast</label>
                     <select class="form-select form-select-md mb-3" id="roast-selection-two">
                         <option>light</option>
@@ -96,12 +99,39 @@
                     <label style="margin-top: 1em; margin-bottom: 1em;" for="second-typing">Coffee Name</label>
                     <br>
                     <input style="background-color: white" id="second-typing" type="text">
-                    <input class="btn btn-primary w-100" id="submitTwo" type="submit" />
+                    <br>
+                    <input class="btn btn-primary " id="submitTwo" type="submit" />
                 </form>
             </div>
         </div>
     </div>
 </main>
+<footer id="footer" class="container">
+    <div id="footer-content" class="row">
+        <div class="col-3 col-sm-4">
+            <h4>Contact Us</h4>
+            <h6>Whole Latte Cafe</h6>
+            <a href="https://www.youtube.com/watch?v=uG795xi3ZHw">wholelattecafe@aol.com</a>
+        </div>
+        <div class="col-6 col-sm-4">
+            <ul>Hours of Operation</ul>
+            <li>Monday_______________7:00am - 5:00pm</li>
+            <li>Tuesday_______________7:00am - 5:00pm</li>
+            <li>Wednesday____________7:00am - 3:00pm</li>
+            <li>Thursday______________7:00am - 5:00pm</li>
+            <li>Friday_________________7:00am - 5:00pm</li>
+            <li>Saturday_______________7:00am - 2:00pm</li>
+            <li>Sunday _________________________CLOSED</li>
+        </div>
+        <div class="col-3 col-sm-4">
+            <h6>Site links</h6>
+            <a href="#home">Home</a>
+            <br>
+            <a href="#coffees">Menu</a>
+        </div>
+    </div>
+
+</footer>
 
     <script src="main.js"></script>
 
