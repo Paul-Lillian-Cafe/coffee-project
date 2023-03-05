@@ -1,20 +1,11 @@
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
-    display: block;
-}
 
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
-}
 body{
     background-color: #151C47;
 
 }
 *{
     font-family: 'Noto Serif', serif;
-    /*background-color: #151C47;*/
+
     color: #FFD700;
 }
 #seperator{
@@ -23,36 +14,30 @@ body{
     margin: 2em;
     color: #FFFDD0
 }
-#first-selector {
-    /*border: solid 2px red;*/
 
-}
 #navbar{
-    /*border: pink 1px solid;*/
-
     height: 65px;
-
 }
 #innerNav{
-    /*border: solid green 1px;*/
     height: 130%;
     width: auto;
-
 }
+
 #logo {
     /*border: solid 1px red;*/
-    width: auto;
-    height: 90%;
-
+    width: 100px;
+    height: auto;
+    object-fit: scale-down;
 }
 
 header {
     position: relative;
-    background-color: black;
-    height: 75vh;
+
+    height: 60vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
+    border-bottom: solid 1.5px #FFFDD0;
 }
 
 header video {
@@ -69,7 +54,6 @@ header video {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     opacity: 1;
-
 
 }
 
@@ -99,24 +83,17 @@ header .overlay {
 }
 #main {
     content: "";
-    /*border: solid 3px red;*/
+
     margin-top: 1em;
     background-image: url("img/bussy-coffee-shop.jpg");
 
     background-color: rgba(0, 0, 0, 0.5); /* set the color with alpha value */
 }
 
-#main::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
 
-}
 #right-side{
-    -webkit-text-stroke: .5px black;
+
+    -webkit-text-stroke: .2px black;
 }
 #roast-selection {
     width: 50%;
@@ -142,17 +119,7 @@ header .overlay {
     margin-bottom: 1em;
 }
 
-#logo {
-    /*border: solid 1px red;*/
-    width: 100px;
-    height: auto;
-    object-fit: scale-down;
-}
 
-
-td{
-    font-size: 15px;
-}
 
 .layout {
     display: flex;
@@ -222,8 +189,6 @@ div .coffee {
 
 
 }
-
-
 
 #fgrid1 {
 
