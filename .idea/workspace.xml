@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8876854-7daf-44e0-b5e1-19fbb752a168" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img/dark-coffee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/smoking-beans.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
@@ -76,7 +74,7 @@
       <workItem from="1677702215107" duration="4973000" />
       <workItem from="1677709463010" duration="11123000" />
       <workItem from="1677860207489" duration="16766000" />
-      <workItem from="1677981031849" duration="4488000" />
+      <workItem from="1677981031849" duration="12912000" />
     </task>
     <servers />
   </component>
@@ -92,7 +90,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/main.js</url>
-          <line>90</line>
+          <line>91</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

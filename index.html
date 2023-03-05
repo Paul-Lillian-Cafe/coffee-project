@@ -18,11 +18,16 @@
         <img src="img/resized-logo.jpg" id="logo">
 <!--            <h1>Coffee!</h1>-->
 
-        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                class="navbar-toggler"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav" id="navbarNav">
                 <a class="nav-item nav-link active" href="#"><i class="fa-solid fa-mug-hot"></i> Home <span class="sr-only"></span></a>
                 <a class="nav-item nav-link active" href="#seperator"><i class="fa-solid fa-mug-hot"></i> Our Menu</a>
                 <a class="nav-item nav-link active" href="https://www.google.com/maps/@30.2892027,-97.7157871,12.86z"><i class="fa-solid fa-mug-hot"></i> Locations</a>
@@ -35,7 +40,7 @@
 </nav>
 <header>
     <div class="overlay" id="home"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video id="video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="img/Morning_Espresso_Routine_(abridged_version).webm" type="video/webm">
         </video>
     <div class="container h-100">
@@ -60,14 +65,14 @@
         <div class="row coffee-layout">
 
 <!--  ------------roasts left side----------------------------------------->
-            <div class="col-6 col-sm-6 col-md-8 col-lg-8">
+            <div id="leftside" class="col-8 col-sm-12 col-md-8 col-lg-8">
                 <div id="coffees" class="row justify-content-center mb-5"></div>
             </div>
 <!--  ------------ roasts   ------------------------------------------->
 
 
 <!--  ------------ coffee selection right side --------------------------->
-            <div class="col-6 col-sm-6 col-md-4 col-lg-4" id="right-side">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-4 d-none d-md-block" id="right-side">
                 <form>
                     <label class="fw-bold" style="margin-top: 1em; margin-bottom: .5em;" for="roast-selection">Roast</label>
                     <select class="form-select form-select-md mb-3" id="roast-selection">
