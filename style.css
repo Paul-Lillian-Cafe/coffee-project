@@ -156,6 +156,7 @@ div .coffee {
 
 }
 /*idea for hover blur effects*/
+/*https://freefrontend.com/css-hover-effects/*/
 /*https://codepen.io/russpate/pen/qRaepv*/
 #leftside:hover #cards:hover{
     filter: blur(0px);
