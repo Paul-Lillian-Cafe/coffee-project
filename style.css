@@ -85,8 +85,8 @@ header .overlay {
     content: "";
 
     margin-top: 1em;
-    background-image: url("img/bussy-coffee-shop.jpg");
-
+    background-image: url("img/darkercafe.avif");
+    background-size: cover;
     background-color: rgba(0, 0, 0, 0.5); /* set the color with alpha value */
 }
 
